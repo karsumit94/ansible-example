@@ -1,0 +1,10 @@
+---  
+- hosts: testserver 
+  become: yes
+  tasks: 
+  - name: creating the folder
+    file:
+      path: /tmp/test-root
+      state: directory
+      mode: "u=rw,g=wx,o=rwx"
+      recurse: yes

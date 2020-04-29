@@ -1,0 +1,8 @@
+--- 
+- hosts: testserver   
+  vars:    
+    name: "sumit"
+  tasks:     
+  - name: print the value
+    debug:
+     msg: "My name is {{name}}" 

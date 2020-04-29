@@ -1,0 +1,11 @@
+---  
+- hosts: testserver 
+  tasks:
+  - name: ansible create multiple directory example
+    file:
+      path: "{{ item }}"
+      state: directory
+    with_items:
+      - '/tmp/test1'
+      - '/tmp/test2'
+      - '/tmp/test3' 

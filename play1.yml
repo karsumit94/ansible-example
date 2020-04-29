@@ -1,0 +1,9 @@
+---  
+- hosts: testserver 
+  tasks: 
+  - name: creating the folder
+    file:
+      path: /tmp/test
+      state: directory
+      mode: "u=rw,g=wx,o=rwx"
+      recurse: yes
