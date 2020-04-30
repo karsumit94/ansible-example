@@ -10,6 +10,7 @@
       msg: "Hello from demo task 2"
 
 - name: "Ansible Demo for Group B"
+  serial: 1
   hosts: groupB
   tasks:
   - name: demo task 3 
