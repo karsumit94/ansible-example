@@ -18,3 +18,4 @@
   - name: demo task 4
     debug:
       msg: "Hello from demo task 4"
+    when: inventory_hostname == "host4"
