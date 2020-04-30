@@ -1,0 +1,20 @@
+---
+- name: "Ansible Demo for Group A"
+  hosts: groupA
+  tasks:
+  - name: demo task 1 
+    debug:
+      msg: "Hello from demo task 1"
+  - name: demo task 2
+    debug:
+      msg: "Hello from demo task 2"
+
+- name: "Ansible Demo for Group B"
+  hosts: groupB
+  tasks:
+  - name: demo task 3 
+    debug:
+      msg: "Hello from demo task 3"
+  - name: demo task 4
+    debug:
+      msg: "Hello from demo task 4"
